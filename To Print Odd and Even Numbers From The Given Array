@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int a[10],n,i;
+    printf("enter the no.of elements:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("enter the element a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    printf("\nthe even elements are:\n");
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+            printf("%d\n",a[i]);
+        }
+        
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2!=0)
+        {
+            printf("%d\n",a[i]);
+        }
+    }
+    printf("\nthe odd elements are:\n");
+    return 0;
+}
